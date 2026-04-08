@@ -58,6 +58,9 @@ Run the application:
 ```bash
 npm run dev
 ```
+## Live Application
+
+https://wall-calendar-mzpd32kt9-srushti88s-projects.vercel.app
 
 ---
 
