@@ -1,0 +1,273 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 360px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 
+    0 4px 0 #ddd,
+    0 10px 25px rgba(0,0,0,0.1);
+  transform: rotate(-0.5deg);
+}
+
+/* HERO */
+.hero {
+  height: 260px;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLUE SHAPE */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  height: 120px;
+  background: #2F80ED;
+  clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/* MONTH TEXT */
+.month-text {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  text-align: right;
+}
+
+.month-text h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.month-text p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* MONTH NAV */
+.month-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.month-nav button {
+  background: #2F80ED;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.month-nav button:hover {
+  background: #1c5fd4;
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.top-bar button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* BOTTOM */
+.bottom {
+  display: flex;
+}
+
+/* NOTES */
+.notes {
+  width: 40%;
+  padding: 15px;
+}
+
+.notes h3 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.notes input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.notes button {
+  width: 100%;
+  padding: 8px;
+  background: #2F80ED;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.notes button:hover {
+  background: #1c5fd4;
+}
+
+.note-box {
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 11px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* CALENDAR */
+.calendar {
+  width: 60%;
+  padding: 15px;
+}
+
+/* DAYS */
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.days div:nth-child(6),
+.days div:nth-child(7) {
+  color: #2F80ED;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+/* DAY */
+.day {
+  text-align: center;
+  padding: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.day:hover {
+  background: #eee;
+  border-radius: 6px;
+}
+
+.day.start,
+.day.end {
+  background: #2F80ED;
+  color: white;
+  border-radius: 6px;
+}
+
+.day.range {
+  background: rgba(47, 128, 237, 0.15);
+  border-radius: 6px;
+}
+
+/* TODAY */
+.today {
+  border: 2px solid #2F80ED;
+  border-radius: 6px;
+}
+
+/* DOT */
+.dot {
+  width: 5px;
+  height: 5px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* EMPTY */
+.day:empty {
+  cursor: default;
+}
+
+/* DARK MODE */
+.container.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+.container.dark .notes input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.container.dark .day {
+  color: white;
+}
+
+.container.dark .day:hover {
+  background: #444;
+}
+
+.container.dark .day.range {
+  background: rgba(255,255,255,0.1);
+}
+
+.container.dark .month-nav button {
+  background: #444;
+}
+
+.container.dark .notes button {
+  background: #444;
+}
+
+.container.dark .delete-btn {
+  background: darkred;
+}
+
+.note-box {
+  margin-top: 8px;
+  background: #f3f3f3;
+  padding: 5px;
+  border-radius: 5px;
+}
