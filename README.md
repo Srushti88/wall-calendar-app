@@ -1,16 +1,76 @@
-# React + Vite
+# Wall Calendar App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and interactive Wall Calendar App built using React and Vite.
+This application allows users to view a calendar and manage notes for specific days.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Monthly calendar view
+* Add and manage notes for specific days
+* Clean and responsive user interface
+* Fast performance using Vite
+* Component-based architecture using React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* Vite
+* JavaScript
+* CSS
+
+---
+
+## Project Structure
+
+src/
+├── components/
+│   ├── Calendar.jsx
+│   ├── CalendarGrid.jsx
+│   ├── HeroSection.jsx
+│   └── NotesPanel.jsx
+├── assets/
+├── styles/
+└── main.jsx
+
+---
+
+## Installation and Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Srushti88/wall-calendar-app.git
+cd wall-calendar-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the application:
+
+```bash
+npm run dev
+```
+
+---
+
+## Future Improvements
+
+* Add reminders and notifications
+* Dark mode support
+* Backend integration for storing notes
+* User authentication
+
+---
+
+## Author
+
+Srushti
+
